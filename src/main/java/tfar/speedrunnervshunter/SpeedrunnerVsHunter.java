@@ -11,8 +11,6 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.level.ChunkHolder;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -77,8 +75,8 @@ public class SpeedrunnerVsHunter implements ModInitializer {
 
         double rot = rand.nextInt(360);
 
-        for (int i = 0; i < TROPHY_COUNT; i++) {
-            double offset = i * 360d / TROPHY_COUNT;
+        for (int i = 0; i < ModConfig.trophy_count; i++) {
+            double offset = i * 360d / ModConfig.trophy_count;
             int x = (int) (center.getX() + distance * Math.cos((Math.PI / 180) * (rot + offset)));
             int z = (int) (center.getZ() + distance * Math.sin((Math.PI / 180) * (rot + offset)));
             TrophyLocation trophyLocation = new TrophyLocation(x, z);
@@ -92,8 +90,6 @@ public class SpeedrunnerVsHunter implements ModInitializer {
             speedrunner.level.setBlock(location.getPos(), Blocks.GOLD_BLOCK.defaultBlockState(),3);
         }
     }
-
-    private static int TROPHY_COUNT = 3;
 
     public void serverTick(MinecraftServer server) {
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {

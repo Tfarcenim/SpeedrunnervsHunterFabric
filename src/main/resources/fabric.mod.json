@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "speedrunnervshunter",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "peedrunner vs Hunter",
+  "description": "Speedrunner vs Hunter, now on Fabric",
   "authors": [
     "Me!"
   ],
