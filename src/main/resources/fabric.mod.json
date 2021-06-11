@@ -6,15 +6,15 @@
   "name": "peedrunner vs Hunter",
   "description": "Speedrunner vs Hunter, now on Fabric",
   "authors": [
-    "Me!"
+    "Tfarcenim"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Tfarcenim/SpeedrunnervsHunterFabric"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/speedrunnervshunter/icon.png",
 
   "environment": "*",
   "entrypoints": {
