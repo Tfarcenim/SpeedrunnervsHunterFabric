@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "tfar.speedrunnervshunter.SpeedrunnerVsHunter"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "speedrunnervshunter.mixins.json"
   ],
 
   "depends": {
